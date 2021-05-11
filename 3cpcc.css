@@ -1,0 +1,116 @@
+:root{
+	--Bright-orange: hsl(31, 77%, 52%);
+	--Dark-cyan: hsl(184, 100%, 22%);
+	--Very-dark-cyan: hsl(179, 100%, 13%);
+	--Transparent-white: hsla(0, 0%, 100%, 0.75);
+	--Very-light-gray: hsl(0, 0%, 95%)
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lexend Deca', sans-serif
+}
+
+.attribution {
+	font-size: 11px; text-align: center
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%)
+}
+
+.container{
+	margin:35px
+}
+
+.card{
+	padding: 40px;
+	font-size: 15px;
+	color: var(--Transparent-white)
+}
+
+.card p{
+	opacity: .7;
+	line-height: 25px
+}
+
+.card h3{
+	text-transform: uppercase;
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 40px;
+	color: var(--Very-light-gray);
+	opacity: .9
+}
+
+.btn{
+	margin-top: 20px;
+	background-color: #fff;
+	border-radius: 30px;
+	border: 2px solid #fff;
+	padding: 15px 40px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: all .4s ease-in-out
+}
+
+.orange{
+	background-color: var(--Bright-orange);
+	border-radius: 10px 10px 0 0
+}
+
+.orange .btn{
+	color: var(--Bright-orange)
+}
+
+.cyan{
+	background-color: var(--Dark-cyan)
+}
+
+.cyan .btn{
+	color: var(--Dark-cyan)
+}
+
+.dark-cyan{
+	background-color: var(--Very-dark-cyan);
+	border-radius: 0 0 10px 10px
+}
+
+.dark-cyan .btn{
+	color: var(--Very-dark-cyan)
+}
+
+.btn:hover{
+	background-color: transparent; 
+	color: #fff
+}
+
+@media (min-width: 768px){
+	.container{
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+
+	.card{
+		height: 500px;
+		padding: 5%;
+		display: inline-block
+	}
+
+	.card h3{
+		font-size: 40px
+	}
+
+	.btn{
+		margin-top: 110px 
+	}
+
+	.orange{
+		border-radius: 10px 0 0 10px
+	}
+
+	.dark-cyan{
+		border-radius: 0 10px 10px 0
+	}
+}
